@@ -21,11 +21,24 @@ The name _Nio_ is inspired by the [two wrathful and muscular guardians of the Bu
 
 Support the creation and management of realms as containers for defined attributes and policies.
 
-# Identity attribute management
+Question: Does that make sense? Should a different realm not just be a different installation of Nio?
+What would be the benefit of managing IAM of two different systems (realms) in a single Nio?
+
+# Identity Attribute Management
 
 A given real defines a set of identity attributes. Nio supports assigning attribute/value pairs to
 identities for the context of a given realm. Identities can have attribites assigned in different
 realms; there is no relationship between realms and attribute assignments.
+
+# Resource Attributes
+
+TBD
+
+# Context Attributes
+
+Nio defines a set of standard context attributes and how to determine them for the most common
+integration technologies.
+
 
 Support adding 
 
@@ -63,6 +76,25 @@ Create response
 when adding a UI controil, verify permission to activate it exists
 when displaying lists, use <?? information> to determine list to display (eg all projects)
 
+
+# Context Attributes
+
+~~~~
+SourceIP
+UserAgent
+
+Continent
+Region
+Country
+
+DayOfWeek
+TimeOfDay
+
+RequestFrequencyLastMinute (sliding average of last minute)
+RequestFrequencyLastHour (sliding average of last hour)
+AuthorizationErrorCountLastMinute
+AuthorizationErrorCountLastHour
+~~~~
 
 # Notes
 
