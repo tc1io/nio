@@ -36,6 +36,8 @@ Nio defines the following standard identity attributes
 
 Beyond that, Systems define their own specific identity attributes in Nio.
 
+Nio provides an API (and UI?) for assigning/managing such predefined attributes to identities.
+
 ## Resource Attributes
 
 Type: The type of the accessed resource at which IAM applies (eg the project in GCP).
@@ -46,6 +48,33 @@ Systems define their own specific resource attributes in Nio.
 
 Nio defines a set of standard context attributes and how to determine them for the most common
 integration technologies.
+
+## Policies
+
+ABAC Policies are used to determine effective permissions a subject (identity) has when 
+interacting with a given resource in a given context.
+
+Nio enables management of policies to manage authorization. Policies are bound to a realm,
+to make it possible to manage independent sets of policies with a given Nio installation.
+(Question: should different realms be handled by different Nio installations? See same
+question regarding identity attributes above).
+
+Policies map attribute expressions to sets of permissions.
+
+Policies can either allow or deny a set of permissions.
+
+Policies have a priority to express the order in which they need to be applied to
+achieve the desired permission set result.
+
+Suppose a realm has the policy set POS = {P1,P2,P3} and Subject S intends operaton X on R in context C.
+
+S = {A1,A2}
+R = {A4,A5}
+C = {A3,A6, A7}
+
+permission set PES = apply(P, S, R, C)
+
+
 
 # API for Management
 
