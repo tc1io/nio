@@ -142,7 +142,11 @@ possible attributes are per-realm
 
 Questions:
 Why ABAC? when it is difficult to maintain.
+ANSWER: Could do RBAC, but ABAC is more powerful and also allows that context-based decision making and thus makes it simpler to very naturally deny regions in the world or times of day.
+
 I saw there are lots of combinations need to take care in attribute based. Defining attributes will be the main task.
 Reference: https://en.wikipedia.org/wiki/Attribute-based_access_control#Attributes
+ANSWER: The groups attribute can be the one thing to start with. Then you have RBAC.
+
 
 
