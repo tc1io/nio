@@ -140,7 +140,9 @@ possible attributes are per-realm
 
 
 
-
-
+Questions:
+Why ABAC? when it is difficult to maintain.
+I saw there are lots of combinations need to take care in attribute based. Defining attributes will be the main task.
+Reference: https://en.wikipedia.org/wiki/Attribute-based_access_control#Attributes
 
 
