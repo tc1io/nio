@@ -20,6 +20,7 @@ The name _Nio_ is inspired by the [two wrathful and muscular guardians of the Bu
 ## Realms
 
 Support the creation and management of realms as containers for defined attributes and policies.
+(Question: Is there any co-relation between attributes and policies defined in a relam)
 
 Question: Does that make sense? Should a different realm not just be a different installation of Nio?
 What would be the benefit of managing IAM of two different systems (realms) in a single Nio?
